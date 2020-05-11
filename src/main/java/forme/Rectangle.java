@@ -58,7 +58,12 @@ public class Rectangle extends Shape {
 	  public double getLength() {
 	    return length;
 	  }
-
+	  /*
+	   * méthode pour modifier la longueur de triangle
+	   */
+	  public void setLength(double length) {
+		  this.length=length;
+	  }
 	  /**
 	   * methode pour acceder à la largeur.
 	   * @return largeur.
@@ -66,7 +71,12 @@ public class Rectangle extends Shape {
 	  public double getWidth() {
 	    return width;
 	  }
-
+	  /*
+	   * methode pour modifier la largeur du rectangle
+	   */
+	  public void setWidth(double width) {
+		  this.width=width;
+	  }
 	  /**
 	   * methode pour déplacer le rectagle par x et y.
 	   * @param x coordonnée x du deplacement.

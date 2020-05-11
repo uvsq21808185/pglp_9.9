@@ -41,7 +41,12 @@ public class Triangle extends Shape{
 	  public double getBase() {
 	    return base;
 	  }
-
+	  /*
+	   * methode pour modifier la base
+	   */
+	  public void setBase(double base) {
+		  this.base=base;
+	  }
 	  /**
 	   * methode pour acceder la hauteur.
 	   * @return hauteur.
@@ -49,7 +54,12 @@ public class Triangle extends Shape{
 	  public double getHauteur() {
 	    return hauteur;
 	  }
-
+	  /*
+	   * methode pour modifier l'hauteur
+	   */
+	  public void setHauteur(double hauteur) {
+		  this.hauteur=hauteur;
+	  }
 	  /**
 	   * methode pour acceder au sommet.
 	   * @return sommet.

@@ -29,6 +29,12 @@ public class Carre extends Rectangle {
 	  public double getSide() {
 	    return side;
 	  }
+	  /*
+	   * Méthode pour modifier le side du carré
+	   */
+	  public void setSide(double side) {
+		  this.side=side;
+	  }
 
 	  /**
 	   * methode pour afficher les caractéristiques du Carre.
