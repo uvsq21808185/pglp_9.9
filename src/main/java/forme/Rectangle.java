@@ -30,12 +30,18 @@ public class Rectangle extends Shape {
 	   */
 	  public Rectangle(String nomRec,Point position ,double length,double width,int groupId) {
 	    super(nomRec,groupId);
-	    this.leftTop = position;
+	    this.leftTop = position.clone();
 	    this.length = length;
 	    this.width = width;
 	  }
 
-	  /**
+	  public Rectangle(String nomRec, Point pointR, int longueur, int largeur) {
+		  super(nomRec);
+		    this.leftTop = pointR.clone();
+		    this.length = longueur;
+		    this.width = largeur;	}
+
+	/**
 	   * methode pour renvoyer le point en haut à gauche du rectangle.
 	   * @return point en haut à gauche du rectangle.
 	   */

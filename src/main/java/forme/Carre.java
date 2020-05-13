@@ -1,6 +1,7 @@
 package forme;
 
 /**
+ * Classe Carre.
  * @author ZAOUAM Sirageddine
  * @version 1.0
  */
@@ -22,7 +23,10 @@ public class Carre extends Rectangle {
 	    super(nomCarr, pointR, side, side,groupId);
 	    this.side=side;
 	  }
-	  /**
+	  public Carre(String nomCarr, Point pointR, int longueur) {
+		  super(nomCarr, pointR, longueur,longueur);
+		    this.side=longueur;	}
+	/**
 	   * methode pour renvoie le coté du carré.
 	   * @return le coté.
 	   */

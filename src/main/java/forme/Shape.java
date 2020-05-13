@@ -26,7 +26,12 @@ public abstract class Shape implements InterfaceShape{
 	    setGroupId(groupId);
 	  }
 
-	  /**
+	  public Shape(String nomCer) {
+		  name=nomCer;
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
 	   * methode pour déplacer la forme.
 	   * @param x coordonnée x du deplacement.
 	   * @param y coordonnée y du deplacement.

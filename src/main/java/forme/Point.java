@@ -1,5 +1,7 @@
 package forme;
 
+import java.io.CharConversionException;
+
 /**
  * Classe Point représentant la position des objets qu'on va manipuler.
  * @author ZAOUAM Sirageddine
@@ -34,6 +36,33 @@ public class Point {
 	  }
 
 	  /**
+	     * constructeur de position avec un type String.
+	     * syntaxe : (x,y)
+	     * @param position string contenant la position.
+	     * @throws CharConversionException invalid String
+	     */
+	    public Point(final String position) throws CharConversionException {
+	        position.replace(" ", "");
+	        if (position.charAt(0) != '('
+	        || position.charAt(position.length() - 1) != ')') {
+	            System.err.println(position);
+	            throw new CharConversionException();
+	        }
+	        String position2 = position.substring(1, position.length() - 1);
+	        String[] positionSplit = position2.split(",");
+	        if (positionSplit.length != 2) {
+	            System.err.println(position);
+	            throw new CharConversionException();
+	        }
+	        try {
+	            x = Integer.parseInt(positionSplit[0]);
+	            y = Integer.parseInt(positionSplit[1]);
+	        } catch (NumberFormatException e) {
+	            e.printStackTrace();
+	            throw e;
+	        }
+	    }
+	/**
 	   * methode pour accéder au coordonnée x du point.
 	   * @return cordonné x du point. 
 	   */
@@ -61,4 +90,28 @@ public class Point {
 	  public void setY(double y1) {
 		  this.y = y1;
 	  }
+	  /**
+	     * déplacer ce point selon les paramètres.
+	     * @param xValue décalage en abscisse par rapport à l'origine
+	     * @param yValue décalage en ordonnée par rapport à l'origine
+	     */
+	    public void deplace(final int xValue, final int yValue) {
+	        x += xValue;
+	        y += yValue;
+	    }
+	    /**
+	     * conversion en String d'une position.
+	     * @return position converti en chaine de caractère
+	     */
+	    public String toString() {
+	        return "(" + x + "," + y + ")";
+	    }
+	    /**
+	     * retourne une copie de la position.
+	     * @return copie de l'objet
+	     */
+	    @Override
+	    public Point clone() {
+	        return new Point(x, y);
+	    }
 	}

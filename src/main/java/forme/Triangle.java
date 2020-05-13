@@ -31,7 +31,7 @@ public class Triangle extends Shape{
 	    super(nomT,groupId);
 	    this.base = base;
 	    this.hauteur= hauteur;
-	    top=pointT;
+	    top=pointT.clone();
 	  }
 
 	  /**
