@@ -42,6 +42,7 @@ public interface Dao<T> {
      * @return tous les éléments
      */
   public ArrayList<T> findAll();
-
+  
+  	public void CreateDaoTable();
 }
 
