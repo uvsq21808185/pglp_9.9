@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Dao;
 
 import java.sql.Connection;
@@ -20,7 +17,6 @@ import forme.Point;
  */
 
 public class DaoCercleJdbc implements Dao<Cercle>{
-
   /**
    * un attribut pour établire la connexion.
    */
@@ -30,12 +26,12 @@ public class DaoCercleJdbc implements Dao<Cercle>{
    * la requte da creation de la table Cercles.
    */
   private String table = "create table cercles(name varchar(20) NOT NULL PRIMARY KEY, " 
-      + " x double NOT NULL, y double NOT NULL, rayon double Not Null,groupId integer)";
+      + " x double NOT NULL, y double NOT NULL, rayon double Not Null)";
   
-  private String insertString = "insert into cercles(name, x, y, rayon,groupId) values (?,?,?,?,?)";
+  private String insertString = "insert into cercles(name, x, y, rayon) values (?,?,?,?)";
   private String findString = "select * from cercles where name = (?)"; 
   private String updateString = "update cercles set x = (?), "
-	        + "y = (?), rayon = (?), groupId = (?) where name =(?)";
+	        + "y = (?), rayon = (?) where name =(?)";
   private String deleteString = "delete from cercles where name =(?)";
 
 
@@ -48,7 +44,7 @@ public class DaoCercleJdbc implements Dao<Cercle>{
    * Constructeur pour établissement de la connexion.
    * et la creation de la table si elle n'existe pas .
    */
-  public DaoCercleJdbc() {
+  public void CreateDaoTable() {
 	connexion = Connexion.getConnection();
     try {
       ResultSet res = connexion.getMetaData().getTables(null,null,"cercles".toUpperCase(),null);
@@ -73,12 +69,18 @@ public class DaoCercleJdbc implements Dao<Cercle>{
     PreparedStatement create =  null;
     int status = 0;
     try {
+    	 PreparedStatement prepare = connexion.prepareStatement(
+                 "INSERT INTO Forme"
+                 + " (variableName)"
+                 + " VALUES(?)");
+                 prepare.setString(1, obj.getName());
+                 prepare.executeUpdate();
       create = connexion.prepareStatement(insertString);
       create.setString(1, obj.getName());
       create.setDouble(2, obj.getCentre().getX());
       create.setDouble(3, obj.getCentre().getY());
       create.setDouble(4, obj.getRayon());
-      create.setInt(5, obj.getGroupId());
+     // create.setInt(5, obj.getGroupId());
       status = create.executeUpdate();
         connexion.close();
     } catch (SQLException e) {
@@ -119,9 +121,9 @@ public class DaoCercleJdbc implements Dao<Cercle>{
         double x = resultat.getDouble("x");
         double y = resultat.getDouble("y");
         double redius = resultat.getDouble("rayon");
-        int idG = resultat.getInt("groupId");
+        //int idG = resultat.getInt("groupId");
         point = new Point(x,y);
-        c = new Cercle(nom,point,redius,idG);
+        c = new Cercle(nom,point,redius);
         connexion.close();
       }
     } catch (SQLException e) {
@@ -150,8 +152,8 @@ public class DaoCercleJdbc implements Dao<Cercle>{
       update.setDouble(1, obj.getCentre().getX());
       update.setDouble(2, obj.getCentre().getY());
       update.setDouble(3, obj.getRayon());
-      update.setInt(4, obj.getGroupId());
-      update.setString(5, obj.getName());
+     // update.setInt(4, obj.getGroupId());
+      update.setString(4, obj.getName());
       update.executeUpdate();
       connexion.close();
     } catch (SQLException e) {
@@ -164,6 +166,7 @@ public class DaoCercleJdbc implements Dao<Cercle>{
     } catch (SQLException e1) {
       e1.printStackTrace();
     }
+    System.out.println("Le cercle est bien deplacé \n");
     return obj;
   }
 
@@ -212,4 +215,5 @@ public class DaoCercleJdbc implements Dao<Cercle>{
       }
       return find;
   }
+  
 }
