@@ -1,6 +1,7 @@
 package drawing;
 
 import java.sql.Connection;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -21,10 +22,45 @@ import forme.Rectangle;
 import forme.Shape;
 import forme.Triangle;
 /**
+ * Classe DrawingTUI
  * @author ZAOUAM Sirageddine
  * @version 1.0
  */
 public class DrawingTUI {
+    /**
+     * interprète la commande de création d'un carré.
+     * @param variableName nom de la variable
+     * @param split2 données après le '='
+     * @return le carré ou null en cas d'erreurs
+     */
+    private Shape creerCarre(
+            final String variableName, final String[] split2) {
+        final int trois = 3;
+        String[] split = split2[1].split("Carre");
+        if (!split[0].equals("")
+                || !(split[1].startsWith("(") && split[1].endsWith(")"))) {
+            System.err.println("Commande invalide, parenthèses manquantes");
+        } else {
+            split[1] = split[1].substring(1, split[1].length() - 1);
+            split = split[1].split(",");
+            if (split.length != trois) {
+                System.err.println("Commande invalide, "
+                        + split.length + "/" + trois + " arguments");
+            } else {
+                Point topLeft;
+                int longueur;
+                try {
+                    topLeft = new Point(split[0] + "," + split[1]);
+                    longueur = Integer.parseInt(split[2]);
+                    return new Carre(variableName, topLeft, longueur);
+                } catch (Exception e) {
+                    System.err.println("Commande invalide, "
+                            + "impossible de créer la forme");
+                }
+            }
+        }
+        return null;
+    }
     /**
      * interprète la commande de création d'un cercle.
      * @param variableName nom de la variable
@@ -60,35 +96,37 @@ public class DrawingTUI {
         return null;
     }
     /**
-     * interprète la commande de création d'un carré.
+     * interprète la commande de création d'un triangle.
      * @param variableName nom de la variable
      * @param split2 données après le '='
-     * @return le carré ou null en cas d'erreurs
+     * @return le triangle ou null en cas d'erreurs
      */
-    private Shape creerCarre(
+    
+    private Shape creerTriangle(
             final String variableName, final String[] split2) {
-        final int trois = 3;
-        String[] split = split2[1].split("Carre");
+        final int six = 6;
+        String[]  split = split2[1].split("Triangle");
         if (!split[0].equals("")
                 || !(split[1].startsWith("(") && split[1].endsWith(")"))) {
             System.err.println("Commande invalide, parenthèses manquantes");
         } else {
             split[1] = split[1].substring(1, split[1].length() - 1);
             split = split[1].split(",");
-            if (split.length != trois) {
+            if (split.length != six) {
                 System.err.println("Commande invalide, "
-                        + split.length + "/" + trois + " arguments");
-            } else {
-                Point topLeft;
-                int longueur;
-                try {
-                    topLeft = new Point(split[0] + "," + split[1]);
-                    longueur = Integer.parseInt(split[2]);
-                    return new Carre(variableName, topLeft, longueur);
-                } catch (Exception e) {
-                    System.err.println("Commande invalide, "
-                            + "impossible de créer la forme");
-                }
+            + split.length + "/" + six + " arguments");
+            }
+            Point[] point = {null, null, null};
+            try {
+                final int trois = 3, quatre = 4, cinq = 5;
+                point[0] = new Point(split[0] + "," + split[1]);
+                point[1] = new Point(split[2] + "," + split[trois]);
+                point[2] = new Point(split[quatre] + "," + split[cinq]);
+                return new Triangle(variableName, point[0], point[1], point[2]);
+            } catch (Exception e) {
+                e.printStackTrace();
+                System.err.println("Commande invalide, "
+                        + "impossible de créer la forme");
             }
         }
         return null;
@@ -131,43 +169,6 @@ public class DrawingTUI {
         return null;
     }
     /**
-     * interprète la commande de création d'un triangle.
-     * @param variableName nom de la variable
-     * @param split2 données après le '='
-     * @return le triangle ou null en cas d'erreurs
-     */
-    /*
-    private Shape creerTriangle(
-            final String variableName, final String[] split2) {
-        final int six = 6;
-        String[]  split = split2[1].split("Triangle");
-        if (!split[0].equals("")
-                || !(split[1].startsWith("(") && split[1].endsWith(")"))) {
-            System.err.println("Commande invalide, parenthèses manquantes");
-        } else {
-            split[1] = split[1].substring(1, split[1].length() - 1);
-            split = split[1].split(",");
-            if (split.length != six) {
-                System.err.println("Commande invalide, "
-            + split.length + "/" + six + " arguments");
-            }
-            Point[] point = {null, null, null};
-            try {
-                final int trois = 3, quatre = 4, cinq = 5;
-                point[0] = new Point(split[0] + "," + split[1]);
-                point[1] = new Point(split[2] + "," + split[trois]);
-                point[2] = new Point(split[quatre] + "," + split[cinq]);
-                return new Triangle(variableName, point[0], point[1], point[2]);
-            } catch (Exception e) {
-                e.printStackTrace();
-                System.err.println("Commande invalide, "
-                        + "impossible de créer la forme");
-            }
-        }
-        return null;
-    }
-    */
-    /**
      * interprète la commande de création d'un groupe.
      * @param variableName nom de la variable
      * @param split2 données après le '='
@@ -185,25 +186,6 @@ public class DrawingTUI {
             return creerGroupeComposants(variableName, split);
         }
         return null;
-    }
-    /**
-     * interprète la commande de création d'un groupe (partie composants).
-     * @param variableName nom de la variable
-     * @param split données après le '='
-     * @return le groupe ou null en cas d'erreurs
-     */
-	private Shape creerGroupeComposants(
-            final String variableName, final String[] split) {
-        GroupShapes gf = new GroupShapes(variableName);
-        for (String s : split) {
-            Shape f = this.getForme(s);
-            if (f != null) {
-                gf.add(f);
-            } else {
-                return null;
-            }
-        }
-        return gf;
     }
     /**
      * obtenir la forme avec son nom de variable.
@@ -236,6 +218,25 @@ public class DrawingTUI {
         return f;
     }
     /**
+     * interprète la commande de création d'un groupe (partie composants).
+     * @param variableName nom de la variable
+     * @param split données après le '='
+     * @return le groupe ou null en cas d'erreurs
+     */
+	private Shape creerGroupeComposants(
+            final String variableName, final String[] split) {
+        GroupShapes gf = new GroupShapes(variableName);
+        for (String s : split) {
+            Shape f = this.getForme(s);
+            if (f != null) {
+                gf.add(f);
+            } else {
+                return null;
+            }
+        }
+        return gf;
+    }
+    /**
      * interprète la commande de création de forme.
      * @param cmd2 la commande
      * @return la forme générée
@@ -256,8 +257,8 @@ public class DrawingTUI {
                 f = this.creerCarre(variableName, split);
             } else if (split[1].contains("Rectangle")) {
                 f = this.creerRectangle(variableName, split);
-           // } else if (split[1].contains("Triangle")) {
-              //  f = this.createTriangle(variableName, split);
+            } else if (split[1].contains("Triangle")) {
+               f = this.creerTriangle(variableName, split);
             } else if (split[1].contains("Groupe")) {
                 f = this.creerGroupe(variableName, split);
             }
@@ -329,6 +330,92 @@ public class DrawingTUI {
         }
         return null;
     }
+    /**
+     * interprète une commande.
+     * @param cmd commande à interpréter.
+     * @return une commande à exécuter ou null s'il n'y en a pas.
+     */
+    public Command nextCommand(final String cmd) {
+        if (cmd.contains("=")) {
+            Shape f = this.create(cmd);
+            if (f != null) {
+                return new CommandCreate(f);
+            }
+        } else if (cmd.contains("move")) {
+            return this.move(cmd);
+       } else if (cmd.contains("delete")) {
+            return this.remove(cmd);
+        } else if (cmd.equals("start")) {
+            System.out.println("Commandes disponibles : \n \n"
+            		+"***************************************MENU********************************** \n"
+                    +"*"+" Dessiner un cercle    :     nom_cercle = Cercle((x,y), rayon)             * \n"
+                    +"*"+" Dessiner un carré     :     nom_carre = Carre((x,y), longueur)            * \n"
+                    +"*"+" Dessiner un rectangle :     nom_rectangle  = Rectangle((x,y), long, larg) * \n"
+                    +"*"+" Dessiner un triangle  :     nom_triangle = Triangle((x,y), (x,y), (x,y))  * \n"
+                    +"*"+" Dessiner un groupe    :     nom_groupe = Groupe(variableName, ...)        * \n"
+                    +"*"+"                                                                           *\n"
+                    +"*"+" Déplacer une forme ou un groupe :  move(variableName, (x,y))              * \n"
+                    +"*"+"                                                                           * \n"
+                    +"*"+" Supprimer une forme ou un groupe : delete(variableName, ...)              * \n"
+            		+"***************************************************************************** \n");
+        } else if (!cmd.equalsIgnoreCase("exit")) {
+            System.err.println("Commande non reconnu");
+        }
+        return null;
+    }
+    /**
+     * indique si une forme est contenu dans un groupe.
+     * @param f forme pour rechercher
+     * @return vrai si la forme est dans un groupe
+     */
+   
+    @SuppressWarnings("unused")
+	private boolean estDansUnGroupe(final Shape f) {
+        Connection connect = Connexion.getConnection();
+        try {
+            PreparedStatement prepare = connect.prepareStatement(
+                    "SELECT * "
+                    + "FROM Composition WHERE idComposant = ?");
+            prepare.setString(1, f.getName());
+            ResultSet result = prepare.executeQuery();
+            boolean b = result.next();
+            connect.close();
+            return b;
+        } catch (SQLException e) {
+            e.printStackTrace();
+            try {
+                connect.close();
+            } catch (SQLException e1) {
+                e1.printStackTrace();
+            }
+            return false;
+        }
+    }
+    /**
+     * affiche toutes les formes du dessin (sauf les groupes).
+     */
+  
+    public void afficheDessin() {
+       Dao<Cercle> daoCercle = new DaoCercleJdbc();
+       Dao<Carre> daoCarree = new DaoCarreJdbc();
+       Dao<Rectangle> daoRectangle = new DaoRectangleJdbc();
+       Dao<Triangle> daoTriangle = new DaoTriangleJdbc();
+       Dao<GroupShapes> daoGroupShapes = new DaoGroupShapesJdbc();
+        
+        ArrayList<Shape> formes = new ArrayList<Shape>();
+        formes.addAll(daoCercle.findAll());
+        formes.addAll(daoCarree.findAll());
+        formes.addAll(daoRectangle.findAll());
+        formes.addAll(daoTriangle.findAll());
+        formes.addAll(daoGroupShapes.findAll());
+
+        System.out.println("Le dessin contient : \n");
+
+        for (Shape f : formes) {
+             
+                System.out.println(f.Affiche()+"\n");
+           }
+        }
   
    
 }
