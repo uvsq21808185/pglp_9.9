@@ -193,6 +193,7 @@ public class DrawingTUI {
      * @return la forme
      */
     private Shape getForme(final String variableName) {
+
         Dao<Cercle> daoCe = new DaoCercleJdbc();
         Dao<Carre> daoCa = new DaoCarreJdbc();
         Dao<Rectangle> daoR = new DaoRectangleJdbc();
@@ -396,6 +397,7 @@ public class DrawingTUI {
      */
   
     public void afficheDessin() {
+
        Dao<Cercle> daoCercle = new DaoCercleJdbc();
        Dao<Carre> daoCarree = new DaoCarreJdbc();
        Dao<Rectangle> daoRectangle = new DaoRectangleJdbc();
@@ -409,13 +411,14 @@ public class DrawingTUI {
         formes.addAll(daoTriangle.findAll());
         formes.addAll(daoGroupShapes.findAll());
 
-        System.out.println("Le dessin contient : \n");
+        System.out.println("\n Le dessin contient : \n");
 
         for (Shape f : formes) {
-             
+            if (!this.estDansUnGroupe(f)) {
+
                 System.out.println(f.Affiche()+"\n");
            }
         }
-  
+    }
    
 }

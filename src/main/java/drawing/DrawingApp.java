@@ -19,8 +19,9 @@ import forme.GroupShapes;
 import forme.Rectangle;
 import forme.Triangle;
 
-/**
- * @author Win10
+/** Classe principale du programme dessin contenant le main.
+ * @author ZAOUAM Sirageddine
+ * @version 2.0
  *
  */
 public class DrawingApp {
@@ -65,8 +66,7 @@ public class DrawingApp {
     			Connection connect = Connexion.getConnection();
     			Connexion.deleteTables(connect);
         		Connexion.CreateTableForme(connect);
-        		 Dao<GroupShapes> daoGroupShapes = new DaoGroupShapesJdbc();
-         	    daoGroupShapes.CreateDaoTable();
+        
                 Connexion.CreateTableComposition(connect); 
            	    Dao<Cercle> daoCercle = new DaoCercleJdbc();
            	    daoCercle.CreateDaoTable();
@@ -75,7 +75,10 @@ public class DrawingApp {
         	    Dao<Rectangle> daoRectangle = new DaoRectangleJdbc();
         	    daoRectangle.CreateDaoTable();
         	    Dao<Triangle> daoTriangle = new DaoTriangleJdbc();
-        	    daoTriangle.CreateDaoTable();               DrawingApp app = new DrawingApp();
+        	    daoTriangle.CreateDaoTable();   
+        	    Dao<GroupShapes> daoGroupShapes = new DaoGroupShapesJdbc();
+         	    daoGroupShapes.CreateDaoTable();
+        	    DrawingApp app = new DrawingApp();
                 app.run();
     }	
 }
