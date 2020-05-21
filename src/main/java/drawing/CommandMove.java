@@ -1,7 +1,6 @@
-/**
- * 
- */
 package drawing;
+
+import java.sql.Connection;
 
 import Dao.Dao;
 import Dao.DaoCarreJdbc;
@@ -9,6 +8,7 @@ import Dao.DaoCercleJdbc;
 import Dao.DaoGroupShapesJdbc;
 import Dao.DaoRectangleJdbc;
 import Dao.DaoTriangleJdbc;
+import connexion.Connexion;
 import forme.Carre;
 import forme.Cercle;
 import forme.GroupShapes;
@@ -47,17 +47,25 @@ public class CommandMove implements Command {
     public void execute() {
         forme.move(vecteur.getX(), vecteur.getY());
         if (forme.getClass() == Cercle.class) {
+        	
             Dao<Cercle> dao = new DaoCercleJdbc();
             dao.update((Cercle) forme);
+            
         } else if (forme.getClass() == Carre.class) {
+        	
             Dao<Carre> dao = new DaoCarreJdbc();
             dao.update((Carre) forme);
+            
         } else if (forme.getClass() == Rectangle.class) {
+        	
             Dao<Rectangle> dao = new DaoRectangleJdbc();
             dao.update((Rectangle) forme);
+            
         } else if (forme.getClass() == Triangle.class) {
+        	
             Dao<Triangle> dao = new DaoTriangleJdbc();
             dao.update((Triangle) forme);
+            
         } else {
             Dao<GroupShapes> dao = new DaoGroupShapesJdbc();
             dao.update((GroupShapes) forme);
