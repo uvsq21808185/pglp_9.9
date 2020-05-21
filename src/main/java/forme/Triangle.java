@@ -1,5 +1,6 @@
 package forme;
 /**
+ * Classe qui décrit la forme d'un triangle.
  * @author ZAOUAM Sirageddine
  * @version 1.0
  */
@@ -18,9 +19,28 @@ public class Triangle extends Shape{
 	   * le point sommet du triangle.
 	   */
 	   private Point top;
-
+	   /**
+	     * ensemble des 3 points d'un triangle.
+	     */
+	   private Point[] points;
+	    /**
+	     * constructeur 1 d'un triangle.
+	     * @param nomVariable nom de variable pour créer le triangle
+	     * @param point1 premier point du triangle
+	     * @param point2 deuxième point du triangle
+	     * @param point3 troisième point du triangle
+	     */
+	    public Triangle(final String nomVariable, final Point point1,
+	            final Point point2, final Point point3) {
+	        super(nomVariable);
+	        final int trois = 3;
+	        points = new Point[trois];
+	        points[0] = point1.clone();
+	        points[1] = point2.clone();
+	        points[2] = point3.clone();
+	    }
 	  /**
-	   * constructeur.
+	   * constructeur 2.
 	   * @param nomT nom du triangle.
 	   * @param pointT point de reference.
 	   * @param base la longueur du triangle.
@@ -75,17 +95,31 @@ public class Triangle extends Shape{
 	  public void setTop(Point top) {
 	    this.top = top;
 	  }
+	  /**
+	     * obtenir un point du triangle.
+	     * @param index valeur entre 0 et 2 indiquant le point souhaité
+	     * @return le point souhaité
+	     */
+	    public Point getPoint(final int index) {
+	        if (index < 0 || index > 2) {
+	            throw new IndexOutOfBoundsException();
+	        } else {
+	            return points[index].clone();
+	        }
+	    }
 
 	  /**
-	   * methode pour déplacer le triagle par x et y.
-	   * @param x coordonnée x du deplacement.
-	   * @param y coordonnée y du deplacement.
-	   */
-	  @Override
-	  public void move(double x, double y) {
-	    top.setX(top.getX()+x);
-		top.setY(top.getY()+y);
-	  }
+		  * methode pour déplacer le triangle au point (x,y).
+		  * @param x coordonnée x du deplacement.
+		  * @param y coordonnée y du deplacement.
+		  */
+		  @Override
+		    public void move(final double x, final double y) {
+			  final int trois = 3;
+		        for (int i = 0; i < trois; i++) {
+		            points[i].deplace(x, y);
+		        }
+		  }
 
 	  /**
 	   * methode pour afficher les caractéristiques du triangle.
@@ -93,8 +127,8 @@ public class Triangle extends Shape{
 	   */
 	  @Override
 	  public String Affiche() {
-	    Point point = this.getTop();
-	      return this.getName()+" = Triangle(Sommet("+point.getX()+","
-	        +point.getY()+"),base="+this.getBase()+", hauteur="+this.getHauteur()+")";
+	      return this.getName()+" = Triangle(Point 1 ("+points[0].getX()+","
+	        +points[0].getY()+")"+", Point 2 ("+points[1].getX()+","+points[1].getY()+")"+""
+	        		+", Point 3 ("+points[2].getX()+","+points[2].getY()+") )";
 		  }
 	}

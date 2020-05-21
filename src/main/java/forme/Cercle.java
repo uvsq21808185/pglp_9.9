@@ -38,6 +38,7 @@ public class Cercle extends Shape{
 	   * @param rayon rayon du cerle.
 	   * @param groupId le id du groupe du cercle.
 	   */
+	  
 	  public Cercle(String nomCer,Point pointC ,double rayon,int groupId) {
 	    super(nomCer,groupId);
 	    this.rayon = rayon;
@@ -77,16 +78,20 @@ public class Cercle extends Shape{
 	  }
 
 	  /**
-	  * methode pour déplacer le cercle par x et y.
+	  * methode pour déplacer le cercle au point (x,y).
 	  * @param x coordonnée x du deplacement.
 	  * @param y coordonnée y du deplacement.
 	  */
 	  @Override
-	  public void move(double x, double y) {
+	    public void move(final double x, final double y) {
+	        centre.deplace(x, y);
+	    }
+	  
+	 /* public void move(double x, double y) {
 	    centre.setX(centre.getX()+x);
 		centre.setY(centre.getY()+y);
 	  }
-	 
+	 */
 	  /**
 	   * methode pour afficher les caractéristiques du cercle.
 	   * @return les caractéristiques

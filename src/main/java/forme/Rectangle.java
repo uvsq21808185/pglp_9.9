@@ -84,15 +84,14 @@ public class Rectangle extends Shape {
 		  this.width=width;
 	  }
 	  /**
-	   * methode pour déplacer le rectagle par x et y.
-	   * @param x coordonnée x du deplacement.
-	   * @param y coordonnée y du deplacement.
-	   */
-	  @Override
-	  public void move(double x, double y) {
-		leftTop.setX(leftTop.getX()+x);
-		leftTop.setY(leftTop.getY()+y);
-	  }
+		  * methode pour déplacer le rectangle au point (x,y).
+		  * @param x coordonnée x du deplacement.
+		  * @param y coordonnée y du deplacement.
+		  */
+		  @Override
+		    public void move(final double x, final double y) {
+		        leftTop.deplace(x, y);
+		    }
 
 	  /**
 	   * methode pour afficher les caractéristiques du rectangle.

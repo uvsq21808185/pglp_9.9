@@ -92,12 +92,12 @@ public class Point {
 	  }
 	  /**
 	     * déplacer ce point selon les paramètres.
-	     * @param xValue décalage en abscisse par rapport à l'origine
-	     * @param yValue décalage en ordonnée par rapport à l'origine
+	     * @param x2 décalage en abscisse par rapport à l'origine
+	     * @param y2 décalage en ordonnée par rapport à l'origine
 	     */
-	    public void deplace(final int xValue, final int yValue) {
-	        x += xValue;
-	        y += yValue;
+	    public void deplace(final double x2, final double y2) {
+	        x += x2;
+	        y += y2;
 	    }
 	    /**
 	     * conversion en String d'une position.
