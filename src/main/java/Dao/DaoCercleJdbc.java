@@ -27,6 +27,9 @@ public class DaoCercleJdbc implements Dao<Cercle>{
    */
   private String table = "create table cercles(name varchar(20) NOT NULL PRIMARY KEY, " 
       + " x double NOT NULL, y double NOT NULL, rayon double Not Null)";
+		//  +"foreign key (name) references Forme (variableName))";
+
+  
   
   private String insertString = "insert into cercles(name, x, y, rayon) values (?,?,?,?)";
   private String findString = "select * from cercles where name = (?)"; 
@@ -166,7 +169,8 @@ public class DaoCercleJdbc implements Dao<Cercle>{
     } catch (SQLException e1) {
       e1.printStackTrace();
     }
-    System.out.println("Le cercle est bien deplacé \n");
+    System.out.println("Le cercle "+obj.getName()+" a été bien deplacé au point : "
+    	+"("+obj.getCentre().getX()+","+obj.getCentre().getY()+")"+"\n");
     return obj;
   }
 

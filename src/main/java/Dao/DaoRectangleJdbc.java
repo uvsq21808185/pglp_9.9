@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Dao;
 
 import java.sql.Connection;
@@ -31,6 +28,8 @@ public class DaoRectangleJdbc implements Dao<Rectangle> {
 	   */
 	  private String table = "create table rectangles(name varchar(20) NOT NULL PRIMARY KEY, " 
 	      + " x double NOT NULL, y double NOT NULL, length double Not Null, width double Not Null,groupId integer)";
+		//  +"foreign key (name) references Forme (variableName))";
+
 
 	  /**
 	   * attribut statemet.
@@ -41,7 +40,7 @@ public class DaoRectangleJdbc implements Dao<Rectangle> {
 	   * Constructeur pour établissement de la connexion.
 	   * et la creation de la table si elle n'existe pas .
 	   */
-	  public DaoRectangleJdbc() {
+	  public void CreateDaoTable() {
 			connexion = Connexion.getConnection();
 	    try {
 	      ResultSet res = connexion.getMetaData().getTables(null,null,"rectangles".toUpperCase(),null);
@@ -212,4 +211,8 @@ public class DaoRectangleJdbc implements Dao<Rectangle> {
 	        }
 	        return find;
 	    }
+
+
+
+	
 	}

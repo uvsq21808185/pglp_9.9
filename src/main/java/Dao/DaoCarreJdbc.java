@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Dao;
 
 import java.sql.Connection;
@@ -32,6 +29,8 @@ public class DaoCarreJdbc implements Dao<Carre>{
 	   */
 	  private String table = "create table carres(name varchar(20) NOT NULL PRIMARY KEY, " 
 		      + " x double NOT NULL, y double NOT NULL, side double Not Null,groupId integer)";
+			 // +"foreign key (name) references Forme (variableName))";
+
 
 	  /**
 	   * attribut statement.
@@ -42,7 +41,7 @@ public class DaoCarreJdbc implements Dao<Carre>{
 	   * Constructeur pour établissement de la connexion.
 	   * et la creation de la table carres si elle n'existe pas .
 	   */
-	  public DaoCarreJdbc() {
+	  public void CreateDaoTable() {
 			connexion = Connexion.getConnection();
 	    try {
 	      ResultSet res = connexion.getMetaData().getTables(null,null,"carres".toUpperCase(),null);
@@ -162,6 +161,8 @@ public class DaoCarreJdbc implements Dao<Carre>{
 	    } catch (SQLException e1) {
 	      e1.printStackTrace();
 	    }
+	    System.out.println("Le carré est bien deplacé");
+
 	    return obj;
 	  }
 
@@ -210,4 +211,6 @@ public class DaoCarreJdbc implements Dao<Carre>{
 	        }
 	        return find;
 	    }
+
+	
 	}

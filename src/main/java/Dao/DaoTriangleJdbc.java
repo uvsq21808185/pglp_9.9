@@ -1,6 +1,3 @@
-/**
- * 
- */
 package Dao;
 
 import java.sql.Connection;
@@ -27,11 +24,15 @@ public class DaoTriangleJdbc implements Dao<Triangle> {
 	  private Connection connexion = null;
 
 	  /**
-	   * la requte da creation de la table Triangles.
+	   * la requete da creation de la table Triangles.
 	   */
-	  private String table = "create table triangles(name varchar(20) NOT NULL PRIMARY KEY, " 
+	  @SuppressWarnings("unused")
+	private String table = "create table triangles(name varchar(20) NOT NULL PRIMARY KEY, " 
 		      + " x double NOT NULL, y double NOT NULL, base double Not Null, height double Not Null,groupId integer)";
-
+			 // +"foreign key (name) references Forme (variableName))";
+	  
+	  private String table2 ="create table triangles(name varchar(20) NOT NULL PRIMARY KEY,"
+			  +"p1x double, p1y double, p2x double, p2y double,p3x double , p3y double)";
 	  /**
 	   * attribut statemet.
 	   */
@@ -41,13 +42,13 @@ public class DaoTriangleJdbc implements Dao<Triangle> {
 	   * Constructeur pour établissement de la connexion.
 	   * et la creation de la table si elle n'existe pas .
 	   */
-	  public DaoTriangleJdbc() {
+	  public void CreateDaoTable() {
 			connexion = Connexion.getConnection();
 	    try {
 	      ResultSet res = connexion.getMetaData().getTables(null,null,"triangles".toUpperCase(),null);
 	      statement = connexion.createStatement();
 	      if (!res.next()) {
-	        statement.execute(table);
+	        statement.execute(table2);
 	      }
 	      statement.close();
 	      connexion.close();
@@ -65,15 +66,17 @@ public class DaoTriangleJdbc implements Dao<Triangle> {
 			connexion = Connexion.getConnection();
 	    PreparedStatement create =  null;
 	    int status = 0;
-	    String insertString = "insert into triangles(name, x, y,base,height,groupId) values (?,?,?,?,?,?)";
+	    String insertString = "insert into triangles(name, p1x, p1y,p2x,p2y,p3x,p3y) values (?,?,?,?,?,?,?)";
 	    try {
 	      create = connexion.prepareStatement(insertString);
 	      create.setString(1, obj.getName());
-	      create.setDouble(2, obj.getTop().getX());
-	      create.setDouble(3, obj.getTop().getY());
-	      create.setDouble(4, obj.getBase());
-	      create.setDouble(5, obj.getHauteur());
-	      create.setInt(6, obj.getGroupId());
+	      create.setDouble(2, obj.getPoint(0).getX());
+	      create.setDouble(3, obj.getPoint(0).getY());
+	      create.setDouble(4, obj.getPoint(1).getX());
+	      create.setDouble(5, obj.getPoint(1).getY());
+	      create.setDouble(6, obj.getPoint(2).getX());
+	      create.setDouble(7, obj.getPoint(2).getY());
+
 	      status = create.executeUpdate();
 	      connexion.close();
 	    } catch (SQLException e) {
@@ -102,7 +105,10 @@ public class DaoTriangleJdbc implements Dao<Triangle> {
 			connexion = Connexion.getConnection();
 	    PreparedStatement find =  null;
 	    Triangle t = null;
-	    Point point = null;
+	    Point point1 = null;
+	    Point point2 = null;
+	    Point point3 = null;
+
 	    ResultSet resultat = null;
 	    String findString = "select * from triangles where name = (?)"; 
 	    try {
@@ -112,13 +118,18 @@ public class DaoTriangleJdbc implements Dao<Triangle> {
 	      resultat = find.getResultSet();
 	      if (resultat.next()) {
 	        String nom = resultat.getString("name");
-	        double x = resultat.getDouble("x");
-	        double y = resultat.getDouble("y");
-	        double base = resultat.getDouble("base");
-	        double height = resultat.getDouble("height");
-	        int idG = resultat.getInt("groupId");
-	        point =new Point(x,y);
-	        t = new Triangle(nom,point,base,height,idG);
+	        double x1 = resultat.getDouble("p1x");
+	        double y1 = resultat.getDouble("p1y");
+	        double x2 = resultat.getDouble("p2x");
+	        double y2 = resultat.getDouble("p2y");
+	        double x3 = resultat.getDouble("p3x");
+	        double y3 = resultat.getDouble("p3y");
+	        
+	        point1 =new Point(x1,y1);
+	        point2 =new Point(x2,y2);
+	        point3 =new Point(x3,y3);
+	        
+	        t = new Triangle(nom,point1,point2,point3);
 	        connexion.close();
 	      }
 	    } catch (SQLException e) {
@@ -142,16 +153,17 @@ public class DaoTriangleJdbc implements Dao<Triangle> {
 	  public Triangle update(Triangle obj) {
 			connexion = Connexion.getConnection();
 	    PreparedStatement update =  null;
-	    String updateString = "update triangles set x = (?), "
-		        + "y = (?), base = (?),height = (?), groupId = (?) where name =(?)";
+	    String updateString = "update triangles set p1x = (?), "
+		        + "p1y = (?), p2x = (?),p2y = (?), p3x = (?), p3y = (?) where name =(?)";
 	    try {
 	      update = connexion.prepareStatement(updateString);
-	      update.setDouble(1, obj.getTop().getX());
-	      update.setDouble(2, obj.getTop().getY());
-	      update.setDouble(3, obj.getBase());
-	      update.setDouble(4, obj.getHauteur());
-	      update.setInt(5, obj.getGroupId());
-	      update.setString(6, obj.getName());
+	      update.setDouble(1, obj.getPoint(0).getX());
+	      update.setDouble(2, obj.getPoint(0).getY());
+	      update.setDouble(3, obj.getPoint(1).getX());
+	      update.setDouble(4, obj.getPoint(1).getY());
+	      update.setDouble(5, obj.getPoint(2).getX());
+	      update.setDouble(6, obj.getPoint(2).getY());
+	      update.setString(7, obj.getName());
 	      update.executeUpdate();
 	      connexion.close();
 	    } catch (SQLException e) {
@@ -212,4 +224,5 @@ public class DaoTriangleJdbc implements Dao<Triangle> {
 	        }
 	        return find;
 	    }
+
 	}
