@@ -16,7 +16,7 @@ import forme.Carre;
 import forme.Point;
 
 /**
- * @author Win10
+ * @author ZAOUAM Sirageddine
  *
  */
 public class DaoCarreJdbcTest {
