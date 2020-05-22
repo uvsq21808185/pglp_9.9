@@ -23,6 +23,12 @@ public class Carre extends Rectangle {
 	    super(nomCarr, pointR, side, side,groupId);
 	    this.side=side;
 	  }
+	  /**
+	   * constructeur2 de la classe.
+	   * @param nomCarr le nom du carrée. 
+	   * @param pointR point de reference.
+	   * @param longueur le coté du carrée.
+	   */
 	  public Carre(String nomCarr, Point pointR, int longueur) {
 		  super(nomCarr, pointR, longueur,longueur);
 		    this.side=longueur;	}
@@ -34,7 +40,8 @@ public class Carre extends Rectangle {
 	    return side;
 	  }
 	  /*
-	   * Méthode pour modifier le side du carré
+	   * Méthode pour modifier le side du carré.
+	   * @param side le coté du carré.
 	   */
 	  public void setSide(double side) {
 		  this.side=side;
