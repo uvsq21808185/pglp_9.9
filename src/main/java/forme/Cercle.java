@@ -23,7 +23,6 @@ public class Cercle extends Shape{
 	   * @param nomCer nom du cercle.
 	   * @param pointC centre du cercle.
 	   * @param rayon rayon du cerle.
-	   * @param groupId le id du groupe du cercle.
 	   */
 	  public Cercle(String nomCer,Point pointC ,double rayon) {
 	    super(nomCer);
@@ -32,7 +31,7 @@ public class Cercle extends Shape{
 	  }
 
 	  /**
-	   * constructeur.
+	   * constructeur 2.
 	   * @param nomCer nom du cercle.
 	   * @param pointC centre du cercle.
 	   * @param rayon rayon du cerle.
