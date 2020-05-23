@@ -54,7 +54,7 @@ public class Cercle extends Shape{
 
 	  /**
 	   * methode pour modifier redius.
-	   * @param redius nouveau redius.
+	   * @param rayon nouveau redius.
 	   */
 	  public void setRayon(double rayon) {
 	    this.rayon = rayon;
@@ -62,7 +62,7 @@ public class Cercle extends Shape{
 
 	  /**
 	   * methode pour acceder au centre du cercle.
-	   * @returnle centre 
+	   * @return le centre 
 	   */
 	  public Point getCentre() {
 	    return centre;
@@ -70,7 +70,7 @@ public class Cercle extends Shape{
 
 	  /**
 	   * methode pour modifier le centre.
-	   * @param redius nouveau centre.
+	   * @param centre nouveau centre.
 	   */
 	  public void setCentre(Point centre) {
 	    this.centre = centre;

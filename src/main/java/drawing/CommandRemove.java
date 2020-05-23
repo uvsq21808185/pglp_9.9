@@ -1,6 +1,5 @@
 package drawing;
 
-import java.sql.Connection;
 import java.util.ArrayList;
 
 import Dao.Dao;
@@ -9,7 +8,6 @@ import Dao.DaoCercleJdbc;
 import Dao.DaoGroupShapesJdbc;
 import Dao.DaoRectangleJdbc;
 import Dao.DaoTriangleJdbc;
-import connexion.Connexion;
 import forme.Carre;
 import forme.Cercle;
 import forme.GroupShapes;

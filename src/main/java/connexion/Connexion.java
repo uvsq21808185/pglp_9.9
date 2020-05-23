@@ -33,15 +33,16 @@ public class Connexion {
 	    }
 	    return connexion;
 	  }
-	  
+	 /* 
 	public void modifierNomBdd(String newBdd) {
 		  Connexion.nomBdd=newBdd;
 	  }
+	  */
 	  /**
 	     * créer la bdd.
-	     * @throws SQLException erreur de création
+	     * @exception SQLException erreur de création
 	     */
-	    public static void createDataBase()  {
+	    public static void createDataBase() throws SQLException  {
 	        Connection c;
 	        try {
 	            c = DriverManager.getConnection(
@@ -54,10 +55,9 @@ public class Connexion {
 	    /**
 	     * créer la table de composition entre groupeForme et GroupeForme.
 	     * @param connect connexion a la bdd
-	     * @throws SQLException erreur sql
+	     * @exception SQLException erreur sql
 	     */
-		public static void CreateTableComposition(final Connection connect)
-	            throws SQLException {
+		public static void CreateTableComposition(final Connection connect) throws SQLException{
 	        String table = "create table Composition ("
 	                + "idGroupe varchar(30),"
 	                + "idComposant varchar(30),"
@@ -66,9 +66,11 @@ public class Connexion {
 	                + "foreign key (idComposant) "
 	                + "references Forme (variableName)"
 	                + ")";
-	        Statement stat = connect.createStatement();
-	        stat.execute(table);
-	    }
+	        Statement stat;
+				stat = connect.createStatement();
+		        stat.execute(table);
+
+		}
 	    /**
 	     * créer la table Forme.
 	     * @param connect connexion a la bdd

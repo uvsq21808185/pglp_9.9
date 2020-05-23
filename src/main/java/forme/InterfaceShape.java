@@ -17,6 +17,7 @@ public interface InterfaceShape {
 
 	  /**
 	   * methode pour afficher les caractéristiques de la forme.
+	   * @return String le string de la forme.
 	   */
 	  public String Affiche();
 

@@ -43,6 +43,8 @@ public interface Dao<T> {
      */
   public ArrayList<T> findAll();
   
+  /* Creer la table dao dans la Bdd pour chaque forme.
+   */
   	public void CreateDaoTable();
 }
 

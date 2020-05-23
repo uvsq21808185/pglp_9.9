@@ -20,6 +20,7 @@ public abstract class Shape implements InterfaceShape{
 	  /**
 	   * constructeur.
 	   * @param nomForme le nom de la forme.
+	   * @param groupId le id de la forme.
 	   */
 	  public Shape(String nomForme,int groupId) {
 	    name = nomForme;

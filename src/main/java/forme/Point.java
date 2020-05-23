@@ -79,6 +79,7 @@ public class Point {
 
 	  /**
 	   * methode pour modifier coordonnée x du point.
+	   * @param x1 le nouveau x
 	   */
 	  public void setX(double x1) {
 		  this.x = x1;
@@ -86,6 +87,7 @@ public class Point {
 
 	  /**
 	   * methode pour modifier coordonnée y du point.
+	   * @param y1 le nouveau y1
 	   */
 	  public void setY(double y1) {
 		  this.y = y1;

@@ -242,7 +242,7 @@ public class DrawingTUI {
      * @param cmd2 la commande
      * @return la forme générée
      */
-    private Shape create(final String cmd2) {
+    public Shape create(final String cmd2) {
         String[] split;
         split = cmd2.split("=");
         split[0] = split[0].trim();
@@ -272,7 +272,7 @@ public class DrawingTUI {
      * @param cmd2 commande de déplacement
      * @return la commande de déplacement
      */
-    private Command move(final String cmd2) {
+    public Command move(final String cmd2) {
         final int trois = 3;
         String cmd = cmd2.replace(" ", "");
         String[] split = cmd.split("move");
@@ -370,7 +370,6 @@ public class DrawingTUI {
      * @return vrai si la forme est dans un groupe
      */
    
-    @SuppressWarnings("unused")
 	private boolean estDansUnGroupe(final Shape f) {
         Connection connect = Connexion.getConnection();
         try {
