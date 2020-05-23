@@ -1,0 +1,4 @@
+#Sat May 23 04:30:48 CEST 2020
+module-resource*?\:checkstyle-suppressions.xml=C244152EE95C4507CD9DE0756C466EAB4C95B16E
+module-resource*?\:checkstyle-xpath-suppressions.xml=6B49C2AC75B363417F07CE962C4385FBE37D410D
+configuration*?=FFD0FAB22D995ACF9252E8BE1441AB7B75070001
