@@ -3,24 +3,55 @@
   <groupId>zaouam-project</groupId>
   <artifactId>Exercice9.9</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-<reporting>
+  <dependencies>
+     <dependency>
+      <groupId>org.apache.derby</groupId>
+      <artifactId>derby</artifactId>
+      <version>10.14.2.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>5.2.5.RELEASE</version>
+    </dependency>
+    <dependency>
+      <groupId>com.github.spotbugs</groupId>
+      <artifactId>spotbugs</artifactId>
+      <version>4.0.2</version>
+    </dependency>
+        <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  <reporting>
         <plugins>
             <plugin>
                <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-javadoc-plugin</artifactId>
-        <version>2.8</version>
-        <configuration> 
-            <outputDirectory>${project.build.directory}/javadoc</outputDirectory>
-            <reportOutputDirectory>${project.reporting.outputDirectory}/javadoc</reportOutputDirectory>
-        </configuration>
+        		<artifactId>maven-javadoc-plugin</artifactId>
+        		<version>2.8</version>
+        		<configuration> 
+            		<outputDirectory>${project.build.directory}/javadoc</outputDirectory>
+            		<reportOutputDirectory>${project.reporting.outputDirectory}/javadoc</reportOutputDirectory>
+        		</configuration>
             </plugin>
-           
+           <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>3.2.0</version>
+        <configuration>
+          <stylesheetfile>${basedir}/src/main/javadoc/stylesheet.css</stylesheetfile>
+          <show>public</show>
+        </configuration>
+      </plugin>
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
             	<artifactId>findbugs-maven-plugin</artifactId>
             	<version>3.0.4</version>
             </plugin>
-                 <plugin>
+           <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-checkstyle-plugin</artifactId>
           <version>3.1.0</version>
@@ -29,38 +60,37 @@
            </configuration>
           </plugin>
           <plugin>
-        <groupId>com.github.spotbugs</groupId>
-        <artifactId>spotbugs-maven-plugin</artifactId>
-        <version>4.0.0</version>
+  		<groupId>com.github.spotbugs</groupId>
+  		<artifactId>spotbugs-maven-plugin</artifactId>
+  		<version>4.0.0</version>
+		</plugin>
+ 	 </plugins>
+	</reporting>
+
+  <build>
+  	<plugins>
+  	<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-javadoc-plugin</artifactId>
+            <!--<version>3.2.0</version>-->
+            <configuration>
+                <javadocExecutable>C:\Program Files (x86)\Java\jdk-14\bin\javadoc.exe</javadocExecutable>
+                <!--<doclint>none</doclint>-->
+            </configuration>
+        </plugin>
+  	  <plugin>
+	    <groupId>org.apache.maven.plugins</groupId>
+	    <artifactId>maven-jar-plugin</artifactId>
+	    <version>3.0.2</version>
+	    <configuration>
+	      <archive>
+	        <manifest>
+	          <mainClass>${main-class}</mainClass>
+	        </manifest>
+	      </archive>
+	    </configuration>
       </plugin>
-        </plugins>
-    </reporting>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.8</maven.compiler.source>
-        <maven.compiler.target>1.8</maven.compiler.target>
-    </properties>
-    <dependencies>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
-        <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.11</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-        <groupId>org.apache.derby</groupId>
-        <artifactId>derby</artifactId>
-        <version>10.14.2.0</version>
-    </dependency>
-    </dependencies>
-    <build>
-        <plugins>
-        	 <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-site-plugin</artifactId>
-                <version>3.7.1</version>
-            </plugin>
-</plugins>
- </build>
+  	</plugins>
+  </build>
 </project>
+
