@@ -93,7 +93,6 @@ public class DaoTriangleJdbcTest {
 	   */
 	  @Test
 	  public void Test4delete() {
-		  Point point = new Point(0,0);
 		  Point point1 = new Point(2,1);
 		  Point point2 = new Point(3,0);			
 		  Triangle tr4 = new Triangle("tr4",point2,point2,point1);
