@@ -1,0 +1,1106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BugCollection version="4.0.1" sequence="16" timestamp="1590200622798" analysisTimestamp="1590200620492" release="">
+  <Project projectName="Exercice9.9">
+    <Jar>C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\target\classes\connexion\Connexion.class</Jar>
+    <AuxClasspathEntry>C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\target\classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\target\test-classes</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\apache\derby\derby\10.14.2.0\derby-10.14.2.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\springframework\spring-jdbc\5.2.5.RELEASE\spring-jdbc-5.2.5.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\springframework\spring-beans\5.2.5.RELEASE\spring-beans-5.2.5.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\springframework\spring-core\5.2.5.RELEASE\spring-core-5.2.5.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\springframework\spring-jcl\5.2.5.RELEASE\spring-jcl-5.2.5.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\springframework\spring-tx\5.2.5.RELEASE\spring-tx-5.2.5.RELEASE.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\com\github\spotbugs\spotbugs\4.0.2\spotbugs-4.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\ow2\asm\asm\8.0.1\asm-8.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\ow2\asm\asm-analysis\8.0.1\asm-analysis-8.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\ow2\asm\asm-commons\8.0.1\asm-commons-8.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\ow2\asm\asm-tree\8.0.1\asm-tree-8.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\ow2\asm\asm-util\8.0.1\asm-util-8.0.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\apache\bcel\bcel\6.4.1\bcel-6.4.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\net\jcip\jcip-annotations\1.0\jcip-annotations-1.0.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\dom4j\dom4j\2.1.1\dom4j-2.1.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\apache\commons\commons-lang3\3.10\commons-lang3-3.10.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\apache\commons\commons-text\1.8\commons-text-1.8.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\slf4j\slf4j-api\1.8.0-beta4\slf4j-api-1.8.0-beta4.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\com\github\spotbugs\spotbugs-annotations\4.0.2\spotbugs-annotations-4.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\com\google\code\findbugs\jsr305\3.0.2\jsr305-3.0.2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\jaxen\jaxen\1.1.6\jaxen-1.1.6.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\net\sf\saxon\Saxon-HE\9.9.1-2\Saxon-HE-9.9.1-2.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\com\ibm\icu\icu4j\63.1\icu4j-63.1.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\junit\junit\4.12\junit-4.12.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.p2\pool\plugins\org.junit_4.13.0.v20200204-1500.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Users\Win10\.p2\pool\plugins\org.hamcrest.core_1.3.0.v20180420-1519.jar</AuxClasspathEntry>
+    <AuxClasspathEntry>C:\Program Files (x86)\Java\jdk-14\lib\jrt-fs.jar</AuxClasspathEntry>
+    <SrcDir>C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\src\main\resources</SrcDir>
+    <SrcDir>C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\src\test\java</SrcDir>
+    <SrcDir>C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\src\main\java</SrcDir>
+    <SrcDir>C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\src\test\resources</SrcDir>
+    <WrkDir>C:\Users\Win10\Documents\eclipse-workspace\.metadata\.plugins\com.github.spotbugs.plugin.eclipse</WrkDir>
+  </Project>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCarreJdbc">
+      <SourceLine classname="Dao.DaoCarreJdbc" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCarreJdbc" name="CreateDaoTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoCarreJdbc" start="45" end="57" startBytecode="0" endBytecode="226" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoCarreJdbc">
+      <SourceLine classname="Dao.DaoCarreJdbc" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCarreJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoCarreJdbc" start="198" end="212" startBytecode="0" endBytecode="274" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="204" end="204" startBytecode="28" endBytecode="28" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="205" end="205" startBytecode="34" endBytecode="34" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="208" end="208" startBytecode="63" endBytecode="63" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="212" end="212" startBytecode="79" endBytecode="79" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoCarreJdbc">
+      <SourceLine classname="Dao.DaoCarreJdbc" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCarreJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoCarreJdbc" start="198" end="212" startBytecode="0" endBytecode="274" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="202" end="202" startBytecode="21" endBytecode="21" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="204" end="204" startBytecode="27" endBytecode="27" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="205" end="205" startBytecode="34" endBytecode="34" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="208" end="208" startBytecode="63" endBytecode="63" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="212" end="212" startBytecode="79" endBytecode="79" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCarreJdbc">
+      <SourceLine classname="Dao.DaoCarreJdbc" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCarreJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoCarreJdbc" start="198" end="212" startBytecode="0" endBytecode="36" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="202" end="202" startBytecode="21" endBytecode="21" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+    <SourceLine classname="Dao.DaoCarreJdbc" start="202" end="202" startBytecode="21" endBytecode="21" sourcefile="DaoCarreJdbc.java" sourcepath="Dao/DaoCarreJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoCarreJdbcTest">
+      <SourceLine classname="Dao.DaoCarreJdbcTest" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoCarreJdbcTest" name="deleteTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoCarreJdbcTest" start="30" end="38" startBytecode="0" endBytecode="166" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoCarreJdbcTest" start="33" end="33" startBytecode="8" endBytecode="8" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoCarreJdbcTest" start="34" end="34" startBytecode="20" endBytecode="20" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCarreJdbcTest" start="35" end="35" startBytecode="26" endBytecode="26" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCarreJdbcTest" start="38" end="38" startBytecode="34" endBytecode="34" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCarreJdbcTest">
+      <SourceLine classname="Dao.DaoCarreJdbcTest" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoCarreJdbcTest" name="deleteTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoCarreJdbcTest" start="30" end="38" startBytecode="0" endBytecode="15" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1096" end="1647" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoCarreJdbcTest" start="33" end="33" startBytecode="8" endBytecode="8" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java"/>
+    <SourceLine classname="Dao.DaoCarreJdbcTest" start="33" end="33" startBytecode="8" endBytecode="8" sourcefile="DaoCarreJdbcTest.java" sourcepath="Dao/DaoCarreJdbcTest.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCercleJdbc">
+      <SourceLine classname="Dao.DaoCercleJdbc" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbc" name="CreateDaoTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbc" start="51" end="63" startBytecode="0" endBytecode="226" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoCercleJdbc">
+      <SourceLine classname="Dao.DaoCercleJdbc" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbc" name="create" signature="(Lforme/Cercle;)Lforme/Cercle;" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbc" start="71" end="102" startBytecode="0" endBytecode="406" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="75" end="75" startBytecode="17" endBytecode="17" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="79" end="79" startBytecode="24" endBytecode="24" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="80" end="80" startBytecode="36" endBytecode="36" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="81" end="81" startBytecode="44" endBytecode="44" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="81" end="81" startBytecode="52" endBytecode="52" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="82" end="82" startBytecode="58" endBytecode="58" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="83" end="83" startBytecode="69" endBytecode="69" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="84" end="84" startBytecode="83" endBytecode="83" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="85" end="85" startBytecode="97" endBytecode="97" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="87" end="87" startBytecode="108" endBytecode="108" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="88" end="88" startBytecode="115" endBytecode="115" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="89" end="89" startBytecode="124" endBytecode="124" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="93" end="93" startBytecode="134" endBytecode="134" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="99" end="99" startBytecode="154" endBytecode="154" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="102" end="102" startBytecode="160" endBytecode="160" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoCercleJdbc">
+      <SourceLine classname="Dao.DaoCercleJdbc" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbc" start="206" end="220" startBytecode="0" endBytecode="274" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="212" end="212" startBytecode="28" endBytecode="28" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="213" end="213" startBytecode="34" endBytecode="34" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="216" end="216" startBytecode="63" endBytecode="63" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="220" end="220" startBytecode="79" endBytecode="79" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoCercleJdbc">
+      <SourceLine classname="Dao.DaoCercleJdbc" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbc" start="206" end="220" startBytecode="0" endBytecode="274" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="210" end="210" startBytecode="21" endBytecode="21" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="212" end="212" startBytecode="27" endBytecode="27" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="213" end="213" startBytecode="34" endBytecode="34" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="216" end="216" startBytecode="63" endBytecode="63" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="220" end="220" startBytecode="79" endBytecode="79" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCercleJdbc">
+      <SourceLine classname="Dao.DaoCercleJdbc" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbc" name="create" signature="(Lforme/Cercle;)Lforme/Cercle;" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbc" start="71" end="102" startBytecode="0" endBytecode="71" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="75" end="75" startBytecode="17" endBytecode="17" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="75" end="75" startBytecode="17" endBytecode="17" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCercleJdbc">
+      <SourceLine classname="Dao.DaoCercleJdbc" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbc" start="206" end="220" startBytecode="0" endBytecode="36" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="210" end="210" startBytecode="21" endBytecode="21" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+    <SourceLine classname="Dao.DaoCercleJdbc" start="210" end="210" startBytecode="21" endBytecode="21" sourcefile="DaoCercleJdbc.java" sourcepath="Dao/DaoCercleJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCercleJdbcTest">
+      <SourceLine classname="Dao.DaoCercleJdbcTest" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbcTest" name="Test1create" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbcTest" start="44" end="47" startBytecode="0" endBytecode="109" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCercleJdbcTest">
+      <SourceLine classname="Dao.DaoCercleJdbcTest" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbcTest" name="Test4delete" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbcTest" start="54" end="59" startBytecode="0" endBytecode="140" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoCercleJdbcTest">
+      <SourceLine classname="Dao.DaoCercleJdbcTest" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbcTest" name="deleteTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbcTest" start="29" end="37" startBytecode="0" endBytecode="166" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoCercleJdbcTest" start="32" end="32" startBytecode="8" endBytecode="8" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoCercleJdbcTest" start="33" end="33" startBytecode="20" endBytecode="20" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbcTest" start="34" end="34" startBytecode="26" endBytecode="26" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoCercleJdbcTest" start="37" end="37" startBytecode="34" endBytecode="34" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoCercleJdbcTest">
+      <SourceLine classname="Dao.DaoCercleJdbcTest" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoCercleJdbcTest" name="deleteTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoCercleJdbcTest" start="29" end="37" startBytecode="0" endBytecode="15" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1096" end="1647" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoCercleJdbcTest" start="32" end="32" startBytecode="8" endBytecode="8" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+    <SourceLine classname="Dao.DaoCercleJdbcTest" start="32" end="32" startBytecode="8" endBytecode="8" sourcefile="DaoCercleJdbcTest.java" sourcepath="Dao/DaoCercleJdbcTest.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="CreateDaoTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="38" end="50" startBytecode="0" endBytecode="226" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="create" signature="(Lforme/GroupShapes;)Lforme/GroupShapes;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="154" end="192" startBytecode="0" endBytecode="688" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="2" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="158" end="158" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="162" end="162" startBytecode="21" endBytecode="21" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="163" end="163" startBytecode="32" endBytecode="32" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="164" end="164" startBytecode="39" endBytecode="39" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="165" end="165" startBytecode="43" endBytecode="43" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="164" end="164" startBytecode="45" endBytecode="45" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="168" end="168" startBytecode="51" endBytecode="51" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="169" end="169" startBytecode="62" endBytecode="62" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="170" end="170" startBytecode="69" endBytecode="69" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="189" end="189" startBytecode="266" endBytecode="266" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="192" end="192" startBytecode="272" endBytecode="272" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 2}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="createComposition" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="59" end="72" startBytecode="0" endBytecode="222" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="63" end="63" startBytecode="18" endBytecode="18" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="67" end="67" startBytecode="25" endBytecode="25" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="68" end="68" startBytecode="34" endBytecode="34" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="69" end="69" startBytecode="43" endBytecode="43" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="70" end="70" startBytecode="51" endBytecode="51" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="72" end="72" startBytecode="56" endBytecode="56" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="delete" signature="(Lforme/GroupShapes;)V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="288" end="305" startBytecode="0" endBytecode="275" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="2" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="294" end="294" startBytecode="32" endBytecode="32" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="296" end="296" startBytecode="38" endBytecode="38" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="297" end="297" startBytecode="49" endBytecode="49" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="298" end="298" startBytecode="56" endBytecode="56" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="299" end="299" startBytecode="60" endBytecode="60" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="298" end="298" startBytecode="63" endBytecode="63" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="300" end="300" startBytecode="69" endBytecode="69" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="301" end="301" startBytecode="80" endBytecode="80" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="302" end="302" startBytecode="87" endBytecode="87" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="305" end="305" startBytecode="95" endBytecode="95" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 2}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="deleteComposant" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="136" end="146" startBytecode="0" endBytecode="178" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="140" end="140" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="142" end="142" startBytecode="21" endBytecode="21" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="143" end="143" startBytecode="29" endBytecode="29" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="144" end="144" startBytecode="36" endBytecode="36" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="146" end="146" startBytecode="40" endBytecode="40" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="deleteComposition" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="119" end="129" startBytecode="0" endBytecode="178" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="123" end="123" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="125" end="125" startBytecode="21" endBytecode="21" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="126" end="126" startBytecode="29" endBytecode="29" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="127" end="127" startBytecode="36" endBytecode="36" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="129" end="129" startBytecode="40" endBytecode="40" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="find" signature="(Ljava/lang/String;)Lforme/GroupShapes;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="201" end="221" startBytecode="0" endBytecode="395" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="209" end="209" startBytecode="35" endBytecode="35" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="210" end="210" startBytecode="42" endBytecode="42" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="221" end="221" startBytecode="118" endBytecode="118" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="find" signature="(Ljava/lang/String;)Lforme/GroupShapes;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="201" end="221" startBytecode="0" endBytecode="395" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="206" end="206" startBytecode="17" endBytecode="17" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="208" end="208" startBytecode="24" endBytecode="24" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="209" end="209" startBytecode="33" endBytecode="33" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="210" end="210" startBytecode="42" endBytecode="42" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="221" end="221" startBytecode="118" endBytecode="118" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="229" end="243" startBytecode="0" endBytecode="274" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="235" end="235" startBytecode="28" endBytecode="28" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="236" end="236" startBytecode="34" endBytecode="34" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="239" end="239" startBytecode="63" endBytecode="63" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="243" end="243" startBytecode="79" endBytecode="79" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="229" end="243" startBytecode="0" endBytecode="274" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="233" end="233" startBytecode="21" endBytecode="21" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="235" end="235" startBytecode="27" endBytecode="27" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="236" end="236" startBytecode="34" endBytecode="34" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="239" end="239" startBytecode="63" endBytecode="63" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="243" end="243" startBytecode="79" endBytecode="79" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="findComposition" signature="(Ljava/lang/String;)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="79" end="112" startBytecode="0" endBytecode="635" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="88" end="88" startBytecode="41" endBytecode="41" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="89" end="89" startBytecode="48" endBytecode="48" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="90" end="90" startBytecode="57" endBytecode="57" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="91" end="91" startBytecode="66" endBytecode="66" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="92" end="92" startBytecode="75" endBytecode="75" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="93" end="93" startBytecode="84" endBytecode="84" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="109" end="109" startBytecode="223" endBytecode="223" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="112" end="112" startBytecode="236" endBytecode="236" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="findComposition" signature="(Ljava/lang/String;)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="79" end="112" startBytecode="0" endBytecode="635" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="84" end="84" startBytecode="23" endBytecode="23" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="87" end="87" startBytecode="30" endBytecode="30" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="88" end="88" startBytecode="39" endBytecode="39" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="89" end="89" startBytecode="48" endBytecode="48" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="90" end="90" startBytecode="57" endBytecode="57" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="91" end="91" startBytecode="66" endBytecode="66" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="92" end="92" startBytecode="75" endBytecode="75" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="93" end="93" startBytecode="84" endBytecode="84" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="109" end="109" startBytecode="223" endBytecode="223" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="112" end="112" startBytecode="236" endBytecode="236" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="create" signature="(Lforme/GroupShapes;)Lforme/GroupShapes;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="154" end="192" startBytecode="0" endBytecode="115" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="158" end="158" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="158" end="158" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="createComposition" signature="(Ljava/lang/String;Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="59" end="72" startBytecode="0" endBytecode="25" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="63" end="63" startBytecode="18" endBytecode="18" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="63" end="63" startBytecode="18" endBytecode="18" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="delete" signature="(Lforme/GroupShapes;)V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="288" end="305" startBytecode="0" endBytecode="43" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="294" end="294" startBytecode="32" endBytecode="32" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="294" end="294" startBytecode="32" endBytecode="32" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="deleteComposant" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="136" end="146" startBytecode="0" endBytecode="19" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="140" end="140" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="140" end="140" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="deleteComposition" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="119" end="129" startBytecode="0" endBytecode="19" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="123" end="123" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="123" end="123" startBytecode="15" endBytecode="15" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="find" signature="(Ljava/lang/String;)Lforme/GroupShapes;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="201" end="221" startBytecode="0" endBytecode="52" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="206" end="206" startBytecode="17" endBytecode="17" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="206" end="206" startBytecode="17" endBytecode="17" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="229" end="243" startBytecode="0" endBytecode="36" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="233" end="233" startBytecode="21" endBytecode="21" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="233" end="233" startBytecode="21" endBytecode="21" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoGroupShapesJdbc">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoGroupShapesJdbc" name="findComposition" signature="(Ljava/lang/String;)Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoGroupShapesJdbc" start="79" end="112" startBytecode="0" endBytecode="94" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="84" end="84" startBytecode="23" endBytecode="23" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+    <SourceLine classname="Dao.DaoGroupShapesJdbc" start="84" end="84" startBytecode="23" endBytecode="23" sourcefile="DaoGroupShapesJdbc.java" sourcepath="Dao/DaoGroupShapesJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoRectangleJdbc">
+      <SourceLine classname="Dao.DaoRectangleJdbc" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoRectangleJdbc" name="CreateDaoTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoRectangleJdbc" start="44" end="56" startBytecode="0" endBytecode="226" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoRectangleJdbc">
+      <SourceLine classname="Dao.DaoRectangleJdbc" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoRectangleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoRectangleJdbc" start="198" end="212" startBytecode="0" endBytecode="274" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="204" end="204" startBytecode="28" endBytecode="28" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="205" end="205" startBytecode="34" endBytecode="34" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="208" end="208" startBytecode="63" endBytecode="63" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="212" end="212" startBytecode="79" endBytecode="79" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoRectangleJdbc">
+      <SourceLine classname="Dao.DaoRectangleJdbc" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoRectangleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoRectangleJdbc" start="198" end="212" startBytecode="0" endBytecode="274" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="202" end="202" startBytecode="21" endBytecode="21" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="204" end="204" startBytecode="27" endBytecode="27" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="205" end="205" startBytecode="34" endBytecode="34" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="208" end="208" startBytecode="63" endBytecode="63" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="212" end="212" startBytecode="79" endBytecode="79" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoRectangleJdbc">
+      <SourceLine classname="Dao.DaoRectangleJdbc" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoRectangleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoRectangleJdbc" start="198" end="212" startBytecode="0" endBytecode="36" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="202" end="202" startBytecode="21" endBytecode="21" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+    <SourceLine classname="Dao.DaoRectangleJdbc" start="202" end="202" startBytecode="21" endBytecode="21" sourcefile="DaoRectangleJdbc.java" sourcepath="Dao/DaoRectangleJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoRectangleJdbcTest">
+      <SourceLine classname="Dao.DaoRectangleJdbcTest" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoRectangleJdbcTest" name="deleteTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoRectangleJdbcTest" start="30" end="38" startBytecode="0" endBytecode="166" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoRectangleJdbcTest" start="33" end="33" startBytecode="8" endBytecode="8" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoRectangleJdbcTest" start="34" end="34" startBytecode="20" endBytecode="20" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoRectangleJdbcTest" start="35" end="35" startBytecode="26" endBytecode="26" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoRectangleJdbcTest" start="38" end="38" startBytecode="34" endBytecode="34" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoRectangleJdbcTest">
+      <SourceLine classname="Dao.DaoRectangleJdbcTest" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoRectangleJdbcTest" name="deleteTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoRectangleJdbcTest" start="30" end="38" startBytecode="0" endBytecode="15" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1096" end="1647" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoRectangleJdbcTest" start="33" end="33" startBytecode="8" endBytecode="8" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java"/>
+    <SourceLine classname="Dao.DaoRectangleJdbcTest" start="33" end="33" startBytecode="8" endBytecode="8" sourcefile="DaoRectangleJdbcTest.java" sourcepath="Dao/DaoRectangleJdbcTest.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoTriangleJdbc">
+      <SourceLine classname="Dao.DaoTriangleJdbc" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoTriangleJdbc" name="CreateDaoTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoTriangleJdbc" start="46" end="58" startBytecode="0" endBytecode="226" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoTriangleJdbc">
+      <SourceLine classname="Dao.DaoTriangleJdbc" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoTriangleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoTriangleJdbc" start="211" end="225" startBytecode="0" endBytecode="274" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="217" end="217" startBytecode="28" endBytecode="28" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="218" end="218" startBytecode="34" endBytecode="34" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="221" end="221" startBytecode="63" endBytecode="63" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="225" end="225" startBytecode="79" endBytecode="79" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoTriangleJdbc">
+      <SourceLine classname="Dao.DaoTriangleJdbc" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoTriangleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoTriangleJdbc" start="211" end="225" startBytecode="0" endBytecode="274" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="215" end="215" startBytecode="21" endBytecode="21" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="217" end="217" startBytecode="27" endBytecode="27" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="218" end="218" startBytecode="34" endBytecode="34" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="221" end="221" startBytecode="63" endBytecode="63" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="225" end="225" startBytecode="79" endBytecode="79" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoTriangleJdbc">
+      <SourceLine classname="Dao.DaoTriangleJdbc" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Class>
+    <Method classname="Dao.DaoTriangleJdbc" name="findAll" signature="()Ljava/util/ArrayList;" isStatic="false">
+      <SourceLine classname="Dao.DaoTriangleJdbc" start="211" end="225" startBytecode="0" endBytecode="36" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="215" end="215" startBytecode="21" endBytecode="21" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="215" end="215" startBytecode="21" endBytecode="21" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="Dao.DaoTriangleJdbc">
+      <SourceLine classname="Dao.DaoTriangleJdbc" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Class>
+    <Field classname="Dao.DaoTriangleJdbc" name="table" signature="Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="Dao.DaoTriangleJdbc" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+    </Field>
+    <SourceLine classname="Dao.DaoTriangleJdbc" start="30" end="30" startBytecode="12" endBytecode="12" sourcefile="DaoTriangleJdbc.java" sourcepath="Dao/DaoTriangleJdbc.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="Dao.DaoTriangleJdbcTest">
+      <SourceLine classname="Dao.DaoTriangleJdbcTest" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoTriangleJdbcTest" name="deleteTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoTriangleJdbcTest" start="29" end="37" startBytecode="0" endBytecode="166" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="Dao.DaoTriangleJdbcTest" start="32" end="32" startBytecode="8" endBytecode="8" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="Dao.DaoTriangleJdbcTest" start="33" end="33" startBytecode="20" endBytecode="20" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoTriangleJdbcTest" start="34" end="34" startBytecode="26" endBytecode="26" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="Dao.DaoTriangleJdbcTest" start="37" end="37" startBytecode="34" endBytecode="34" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="Dao.DaoTriangleJdbcTest">
+      <SourceLine classname="Dao.DaoTriangleJdbcTest" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java"/>
+    </Class>
+    <Method classname="Dao.DaoTriangleJdbcTest" name="deleteTable" signature="()V" isStatic="false">
+      <SourceLine classname="Dao.DaoTriangleJdbcTest" start="29" end="37" startBytecode="0" endBytecode="15" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/Statement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.Statement" start="1096" end="1647" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Type>
+    <SourceLine classname="Dao.DaoTriangleJdbcTest" start="32" end="32" startBytecode="8" endBytecode="8" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java"/>
+    <SourceLine classname="Dao.DaoTriangleJdbcTest" start="32" end="32" startBytecode="8" endBytecode="8" sourcefile="DaoTriangleJdbcTest.java" sourcepath="Dao/DaoTriangleJdbcTest.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="connexion.Connexion">
+      <SourceLine classname="connexion.Connexion" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Class>
+    <Method classname="connexion.Connexion" name="CreateTableComposition" signature="(Ljava/sql/Connection;)V" isStatic="true">
+      <SourceLine classname="connexion.Connexion" start="61" end="73" startBytecode="0" endBytecode="92" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="connexion.Connexion">
+      <SourceLine classname="connexion.Connexion" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Class>
+    <Method classname="connexion.Connexion" name="CreateTableForme" signature="(Ljava/sql/Connection;)V" isStatic="true">
+      <SourceLine classname="connexion.Connexion" start="81" end="86" startBytecode="0" endBytecode="92" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NP_NULL_ON_SOME_PATH_EXCEPTION" priority="2" rank="11" abbrev="NP" category="CORRECTNESS" first="1">
+    <Class classname="connexion.Connexion">
+      <SourceLine classname="connexion.Connexion" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Class>
+    <Method classname="connexion.Connexion" name="deleteTables" signature="(Ljava/sql/Connection;)V" isStatic="true">
+      <SourceLine classname="connexion.Connexion" start="89" end="123" startBytecode="0" endBytecode="366" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Method>
+    <LocalVariable name="stat" register="1" pc="9" role="LOCAL_VARIABLE_VALUE_OF"/>
+    <SourceLine classname="connexion.Connexion" start="120" end="120" startBytecode="98" endBytecode="98" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_DEREF"/>
+    <SourceLine classname="connexion.Connexion" start="89" end="89" startBytecode="0" endBytecode="0" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_NULL_VALUE"/>
+    <SourceLine classname="connexion.Connexion" start="92" end="92" startBytecode="12" endBytecode="12" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <SourceLine classname="connexion.Connexion" start="93" end="93" startBytecode="14" endBytecode="14" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_KNOWN_NULL"/>
+    <Property name="edu.umd.cs.findbugs.detect.NullDerefProperty.ALWAYS_ON_EXCEPTION_PATH" value="true"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="connexion.Connexion">
+      <SourceLine classname="connexion.Connexion" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Class>
+    <Method classname="connexion.Connexion" name="CreateTableComposition" signature="(Ljava/sql/Connection;)V" isStatic="true">
+      <SourceLine classname="connexion.Connexion" start="61" end="73" startBytecode="0" endBytecode="92" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="connexion.Connexion" start="70" end="70" startBytecode="4" endBytecode="4" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="connexion.Connexion" start="71" end="71" startBytecode="10" endBytecode="10" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="73" end="73" startBytecode="18" endBytecode="18" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="connexion.Connexion">
+      <SourceLine classname="connexion.Connexion" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Class>
+    <Method classname="connexion.Connexion" name="CreateTableForme" signature="(Ljava/sql/Connection;)V" isStatic="true">
+      <SourceLine classname="connexion.Connexion" start="81" end="86" startBytecode="0" endBytecode="92" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="connexion.Connexion" start="84" end="84" startBytecode="4" endBytecode="4" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="connexion.Connexion" start="85" end="85" startBytecode="10" endBytecode="10" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="86" end="86" startBytecode="18" endBytecode="18" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="connexion.Connexion">
+      <SourceLine classname="connexion.Connexion" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Class>
+    <Method classname="connexion.Connexion" name="deleteTables" signature="(Ljava/sql/Connection;)V" isStatic="true">
+      <SourceLine classname="connexion.Connexion" start="89" end="123" startBytecode="0" endBytecode="366" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="connexion.Connexion" start="91" end="91" startBytecode="3" endBytecode="3" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="connexion.Connexion" start="92" end="92" startBytecode="9" endBytecode="9" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="96" end="96" startBytecode="17" endBytecode="17" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="97" end="97" startBytecode="26" endBytecode="26" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="100" end="100" startBytecode="30" endBytecode="30" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="101" end="101" startBytecode="39" endBytecode="39" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="104" end="104" startBytecode="43" endBytecode="43" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="105" end="105" startBytecode="52" endBytecode="52" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="108" end="108" startBytecode="56" endBytecode="56" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="109" end="109" startBytecode="65" endBytecode="65" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="112" end="112" startBytecode="69" endBytecode="69" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="113" end="113" startBytecode="78" endBytecode="78" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="116" end="116" startBytecode="82" endBytecode="82" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="117" end="117" startBytecode="91" endBytecode="91" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="120" end="120" startBytecode="95" endBytecode="95" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="121" end="121" startBytecode="104" endBytecode="104" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="connexion.Connexion" start="123" end="123" startBytecode="108" endBytecode="108" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ST_WRITE_TO_STATIC_FROM_INSTANCE_METHOD" priority="1" rank="15" abbrev="ST" category="STYLE" first="1" last="13" removedByChange="true">
+    <Class classname="connexion.Connexion">
+      <SourceLine classname="connexion.Connexion" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Class>
+    <Method classname="connexion.Connexion" name="modifierNomBdd" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="connexion.Connexion" start="38" end="39" startBytecode="0" endBytecode="60" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Method>
+    <Field classname="connexion.Connexion" name="nomBdd" signature="Ljava/lang/String;" isStatic="true">
+      <SourceLine classname="connexion.Connexion" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    </Field>
+    <SourceLine classname="connexion.Connexion" start="38" end="38" startBytecode="1" endBytecode="1" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+    <SourceLine classname="connexion.Connexion" start="38" end="38" startBytecode="1" endBytecode="1" sourcefile="Connexion.java" sourcepath="connexion/Connexion.java"/>
+  </BugInstance>
+  <BugInstance type="DM_DEFAULT_ENCODING" priority="1" rank="19" abbrev="Dm" category="I18N" first="1">
+    <Class classname="drawing.DrawingApp">
+      <SourceLine classname="drawing.DrawingApp" sourcefile="DrawingApp.java" sourcepath="drawing/DrawingApp.java"/>
+    </Class>
+    <Method classname="drawing.DrawingApp" name="&lt;init&gt;" signature="()V" isStatic="false">
+      <SourceLine classname="drawing.DrawingApp" start="36" end="39" startBytecode="0" endBytecode="83" sourcefile="DrawingApp.java" sourcepath="drawing/DrawingApp.java"/>
+    </Method>
+    <Method classname="java.util.Scanner" name="&lt;init&gt;" signature="(Ljava/io/InputStream;)V" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.util.Scanner" start="566" end="567" startBytecode="0" endBytecode="71" sourcefile="Scanner.java" sourcepath="java/util/Scanner.java"/>
+    </Method>
+    <SourceLine classname="drawing.DrawingApp" start="38" end="38" startBytecode="23" endBytecode="23" sourcefile="DrawingApp.java" sourcepath="drawing/DrawingApp.java"/>
+    <SourceLine classname="drawing.DrawingApp" start="38" end="38" startBytecode="23" endBytecode="23" sourcefile="DrawingApp.java" sourcepath="drawing/DrawingApp.java"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="drawing.DrawingTUI">
+      <SourceLine classname="drawing.DrawingTUI" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUI" name="estDansUnGroupe" signature="(Lforme/Shape;)Z" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUI" start="374" end="391" startBytecode="0" endBytecode="307" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Method>
+    <Class classname="java.sql.ResultSet" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.ResultSet" sourcefile="ResultSet.java" sourcepath="java/sql/ResultSet.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="drawing.DrawingTUI" start="380" end="380" startBytecode="26" endBytecode="26" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="drawing.DrawingTUI" start="381" end="381" startBytecode="33" endBytecode="33" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="drawing.DrawingTUI" start="382" end="382" startBytecode="42" endBytecode="42" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="drawing.DrawingTUI" start="383" end="383" startBytecode="48" endBytecode="48" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="OBL_UNSATISFIED_OBLIGATION" priority="2" rank="20" abbrev="OBL" category="EXPERIMENTAL" first="1">
+    <Class classname="drawing.DrawingTUI">
+      <SourceLine classname="drawing.DrawingTUI" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUI" name="estDansUnGroupe" signature="(Lforme/Shape;)Z" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUI" start="374" end="391" startBytecode="0" endBytecode="307" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Method>
+    <Class classname="java.sql.Statement" role="CLASS_REFTYPE">
+      <SourceLine classname="java.sql.Statement" sourcefile="Statement.java" sourcepath="java/sql/Statement.java"/>
+    </Class>
+    <Int value="1" role="INT_OBLIGATIONS_REMAINING"/>
+    <SourceLine classname="drawing.DrawingTUI" start="376" end="376" startBytecode="8" endBytecode="8" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_OBLIGATION_CREATED"/>
+    <SourceLine classname="drawing.DrawingTUI" start="379" end="379" startBytecode="14" endBytecode="14" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="drawing.DrawingTUI" start="380" end="380" startBytecode="25" endBytecode="25" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="drawing.DrawingTUI" start="381" end="381" startBytecode="33" endBytecode="33" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="drawing.DrawingTUI" start="382" end="382" startBytecode="42" endBytecode="42" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <SourceLine classname="drawing.DrawingTUI" start="383" end="383" startBytecode="48" endBytecode="48" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java" role="SOURCE_LINE_PATH_CONTINUES"/>
+    <String value="{Statement x 1,ResultSet x 1}" role="STRING_REMAINING_OBLIGATIONS"/>
+  </BugInstance>
+  <BugInstance type="ODR_OPEN_DATABASE_RESOURCE" priority="2" rank="16" abbrev="ODR" category="BAD_PRACTICE" first="1">
+    <Class classname="drawing.DrawingTUI">
+      <SourceLine classname="drawing.DrawingTUI" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUI" name="estDansUnGroupe" signature="(Lforme/Shape;)Z" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUI" start="374" end="391" startBytecode="0" endBytecode="31" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Method>
+    <Type descriptor="Ljava/sql/PreparedStatement;" role="TYPE_CLOSEIT">
+      <SourceLine classname="java.sql.PreparedStatement" start="1267" end="1320" sourcefile="PreparedStatement.java" sourcepath="java/sql/PreparedStatement.java"/>
+    </Type>
+    <SourceLine classname="drawing.DrawingTUI" start="376" end="376" startBytecode="8" endBytecode="8" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    <SourceLine classname="drawing.DrawingTUI" start="376" end="376" startBytecode="8" endBytecode="8" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" first="1">
+    <Class classname="drawing.DrawingTUI">
+      <SourceLine classname="drawing.DrawingTUI" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUI" name="creerCarre" signature="(Ljava/lang/String;[Ljava/lang/String;)Lforme/Shape;" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUI" start="38" end="62" startBytecode="0" endBytecode="426" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Method>
+    <SourceLine classname="drawing.DrawingTUI" start="56" end="56" startBytecode="199" endBytecode="199" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    <SourceLine classname="drawing.DrawingTUI" start="56" end="56" startBytecode="199" endBytecode="199" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" first="1">
+    <Class classname="drawing.DrawingTUI">
+      <SourceLine classname="drawing.DrawingTUI" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUI" name="creerCercle" signature="(Ljava/lang/String;[Ljava/lang/String;)Lforme/Shape;" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUI" start="72" end="96" startBytecode="0" endBytecode="427" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Method>
+    <SourceLine classname="drawing.DrawingTUI" start="90" end="90" startBytecode="200" endBytecode="200" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    <SourceLine classname="drawing.DrawingTUI" start="90" end="90" startBytecode="200" endBytecode="200" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+  </BugInstance>
+  <BugInstance type="REC_CATCH_EXCEPTION" priority="2" rank="17" abbrev="REC" category="STYLE" first="1">
+    <Class classname="drawing.DrawingTUI">
+      <SourceLine classname="drawing.DrawingTUI" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUI" name="creerRectangle" signature="(Ljava/lang/String;[Ljava/lang/String;)Lforme/Shape;" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUI" start="142" end="169" startBytecode="0" endBytecode="470" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    </Method>
+    <SourceLine classname="drawing.DrawingTUI" start="163" end="163" startBytecode="213" endBytecode="213" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+    <SourceLine classname="drawing.DrawingTUI" start="163" end="163" startBytecode="213" endBytecode="213" sourcefile="DrawingTUI.java" sourcepath="drawing/DrawingTUI.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="drawing.DrawingTUITest">
+      <SourceLine classname="drawing.DrawingTUITest" sourcefile="DrawingTUITest.java" sourcepath="drawing/DrawingTUITest.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUITest" name="CreateCarreTest" signature="()V" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUITest" start="42" end="53" startBytecode="0" endBytecode="261" sourcefile="DrawingTUITest.java" sourcepath="drawing/DrawingTUITest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="drawing.DrawingTUITest">
+      <SourceLine classname="drawing.DrawingTUITest" sourcefile="DrawingTUITest.java" sourcepath="drawing/DrawingTUITest.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUITest" name="CreateRectangleTest" signature="()V" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUITest" start="57" end="70" startBytecode="0" endBytecode="302" sourcefile="DrawingTUITest.java" sourcepath="drawing/DrawingTUITest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="drawing.DrawingTUITest">
+      <SourceLine classname="drawing.DrawingTUITest" sourcefile="DrawingTUITest.java" sourcepath="drawing/DrawingTUITest.java"/>
+    </Class>
+    <Method classname="drawing.DrawingTUITest" name="CreateTriangleTest" signature="()V" isStatic="false">
+      <SourceLine classname="drawing.DrawingTUITest" start="74" end="92" startBytecode="0" endBytecode="400" sourcefile="DrawingTUITest.java" sourcepath="drawing/DrawingTUITest.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="forme.Carre">
+      <SourceLine classname="forme.Carre" sourcefile="Carre.java" sourcepath="forme/Carre.java"/>
+    </Class>
+    <Method classname="forme.Carre" name="Affiche" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="forme.Carre" start="56" end="57" startBytecode="0" endBytecode="127" sourcefile="Carre.java" sourcepath="forme/Carre.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="forme.Cercle">
+      <SourceLine classname="forme.Cercle" sourcefile="Cercle.java" sourcepath="forme/Cercle.java"/>
+    </Class>
+    <Method classname="forme.Cercle" name="Affiche" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="forme.Cercle" start="100" end="101" startBytecode="0" endBytecode="127" sourcefile="Cercle.java" sourcepath="forme/Cercle.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="forme.GroupShapes">
+      <SourceLine classname="forme.GroupShapes" sourcefile="GroupShapes.java" sourcepath="forme/GroupShapes.java"/>
+    </Class>
+    <Method classname="forme.GroupShapes" name="Affiche" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="forme.GroupShapes" start="35" end="40" startBytecode="0" endBytecode="148" sourcefile="GroupShapes.java" sourcepath="forme/GroupShapes.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="CN_IMPLEMENTS_CLONE_BUT_NOT_CLONEABLE" priority="1" rank="14" abbrev="CN" category="BAD_PRACTICE" first="1">
+    <Class classname="forme.Point">
+      <SourceLine classname="forme.Point" sourcefile="Point.java" sourcepath="forme/Point.java"/>
+    </Class>
+    <Method classname="forme.Point" name="clone" signature="()Lforme/Point;" isStatic="false">
+      <SourceLine classname="forme.Point" start="117" end="117" startBytecode="0" endBytecode="57" sourcefile="Point.java" sourcepath="forme/Point.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="RV_RETURN_VALUE_IGNORED" priority="1" rank="3" abbrev="RV" category="CORRECTNESS" first="1">
+    <Class classname="forme.Point">
+      <SourceLine classname="forme.Point" sourcefile="Point.java" sourcepath="forme/Point.java"/>
+    </Class>
+    <Method classname="forme.Point" name="&lt;init&gt;" signature="(Ljava/lang/String;)V" isStatic="false">
+      <SourceLine classname="forme.Point" start="44" end="64" startBytecode="0" endBytecode="318" sourcefile="Point.java" sourcepath="forme/Point.java"/>
+    </Method>
+    <Method classname="java.lang.String" name="replace" signature="(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;" isStatic="false" role="METHOD_CALLED">
+      <SourceLine classname="java.lang.String" start="2157" end="2197" startBytecode="0" endBytecode="668" sourcefile="String.java" sourcepath="java/lang/String.java"/>
+    </Method>
+    <SourceLine classname="forme.Point" start="45" end="45" startBytecode="9" endBytecode="9" sourcefile="Point.java" sourcepath="forme/Point.java"/>
+    <SourceLine classname="forme.Point" start="45" end="45" startBytecode="9" endBytecode="9" sourcefile="Point.java" sourcepath="forme/Point.java"/>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="forme.Rectangle">
+      <SourceLine classname="forme.Rectangle" sourcefile="Rectangle.java" sourcepath="forme/Rectangle.java"/>
+    </Class>
+    <Method classname="forme.Rectangle" name="Affiche" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="forme.Rectangle" start="102" end="103" startBytecode="0" endBytecode="139" sourcefile="Rectangle.java" sourcepath="forme/Rectangle.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="forme.Shape">
+      <SourceLine classname="forme.Shape" sourcefile="Shape.java" sourcepath="forme/Shape.java"/>
+    </Class>
+    <Method classname="forme.Shape" name="Affiche" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="forme.Shape" sourcefile="Shape.java" sourcepath="forme/Shape.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="NM_METHOD_NAMING_CONVENTION" priority="2" rank="16" abbrev="Nm" category="BAD_PRACTICE" first="1">
+    <Class classname="forme.Triangle">
+      <SourceLine classname="forme.Triangle" sourcefile="Triangle.java" sourcepath="forme/Triangle.java"/>
+    </Class>
+    <Method classname="forme.Triangle" name="Affiche" signature="()Ljava/lang/String;" isStatic="false">
+      <SourceLine classname="forme.Triangle" start="130" end="130" startBytecode="0" endBytecode="188" sourcefile="Triangle.java" sourcepath="forme/Triangle.java"/>
+    </Method>
+  </BugInstance>
+  <BugInstance type="URF_UNREAD_FIELD" priority="2" rank="18" abbrev="UrF" category="PERFORMANCE" first="1">
+    <Class classname="forme.TriangleTest">
+      <SourceLine classname="forme.TriangleTest" sourcefile="TriangleTest.java" sourcepath="forme/TriangleTest.java"/>
+    </Class>
+    <Field classname="forme.TriangleTest" name="t4" signature="Lforme/Triangle;" isStatic="false">
+      <SourceLine classname="forme.TriangleTest" sourcefile="TriangleTest.java" sourcepath="forme/TriangleTest.java"/>
+    </Field>
+    <SourceLine classname="forme.TriangleTest" start="22" end="22" startBytecode="113" endBytecode="113" sourcefile="TriangleTest.java" sourcepath="forme/TriangleTest.java"/>
+  </BugInstance>
+  <Errors errors="0" missingClasses="0"></Errors>
+  <FindBugsSummary timestamp="Sat, 23 May 2020 04:23:40 +0200" total_classes="1" referenced_classes="18" total_bugs="74" total_size="53" num_packages="4" java_version="14" vm_version="14+36-1461" cpu_seconds="0.70" clock_seconds="0.19" peak_mbytes="405.25" alloc_mbytes="2048.00" gc_seconds="0.02" priority_2="71" priority_1="3">
+    <PackageStats package="connexion" total_bugs="6" total_types="1" total_size="53" priority_2="6">
+      <ClassStats class="connexion.Connexion" sourceFile="Connexion.java" interface="false" size="53" bugs="6" priority_2="6"/>
+    </PackageStats>
+    <FindBugsProfile>
+      <ClassProfile name="edu.umd.cs.findbugs.SAXBugCollectionHandler" totalMilliseconds="105" invocations="1" avgMicrosecondsPerInvocation="105218" maxMicrosecondsPerInvocation="105218" standardDeviationMicrosecondsPerInvocation="0"/>
+    </FindBugsProfile>
+  </FindBugsSummary>
+  <ClassFeatures></ClassFeatures>
+  <History>
+    <AppVersion sequence="0" timestamp="1590197550543" release="" codeSize="0" numClasses="0"/>
+    <AppVersion sequence="1" timestamp="1590197550547" release="" codeSize="1808" numClasses="36"/>
+    <AppVersion sequence="2" timestamp="1590199107879" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="3" timestamp="1590199220212" release="" codeSize="3" numClasses="1"/>
+    <AppVersion sequence="4" timestamp="1590199279706" release="" codeSize="24" numClasses="1"/>
+    <AppVersion sequence="5" timestamp="1590199329927" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="6" timestamp="1590199357397" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="7" timestamp="1590199403251" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="8" timestamp="1590199433760" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="9" timestamp="1590199532743" release="" codeSize="30" numClasses="1"/>
+    <AppVersion sequence="10" timestamp="1590199583447" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="11" timestamp="1590199615094" release="" codeSize="51" numClasses="1"/>
+    <AppVersion sequence="12" timestamp="1590199820913" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="13" timestamp="1590199836647" release="" codeSize="58" numClasses="1"/>
+    <AppVersion sequence="14" timestamp="1590199867740" release="" codeSize="55" numClasses="1"/>
+    <AppVersion sequence="15" timestamp="1590199903631" release="" codeSize="53" numClasses="1"/>
+  </History>
+</BugCollection>
