@@ -11,7 +11,7 @@ import java.sql.Statement;
  *
  */
 public class Connexion {
-		private static  String nomBdd="DessinBDD";
+		private static  String nomBdd="DessinBDD3";
 	
 		
 	/**
