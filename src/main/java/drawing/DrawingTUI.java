@@ -22,7 +22,7 @@ import forme.Rectangle;
 import forme.Shape;
 import forme.Triangle;
 /**
- * Classe DrawingTUI
+ * Classe DrawingTUI qui se charge des interactions avec l'utilisateur et qui implémente la méthode nextCommand.
  * @author ZAOUAM Sirageddine
  * @version 1.0
  */
