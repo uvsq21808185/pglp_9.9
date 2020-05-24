@@ -1,13 +1,13 @@
 ----------------------------------------------------------------
-Sat May 23 02:14:28 CEST 2020:
-Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0172-3ee1-8bab-000000c5b0d0 
-on database directory C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\DessinBDD with class loader sun.misc.Launcher$AppClassLoader@a57993 
+Sun May 24 14:26:16 CEST 2020:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.14.2.0 - (1828579): instance a816c00e-0172-46a5-e30e-00000f3843b8 
+on database directory C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9\DessinBDD2 with class loader jdk.internal.loader.ClassLoaders$AppClassLoader@4e0e2f2a 
 Loaded from file:/C:/Users/Win10/.m2/repository/org/apache/derby/derby/10.14.2.0/derby-10.14.2.0.jar
 java.vendor=Oracle Corporation
-java.runtime.version=1.8.0_241-b07
+java.runtime.version=14+36-1461
 user.dir=C:\Users\Win10\Documents\eclipse-workspace\Exercice9.9
 os.name=Windows 10
-os.arch=x86
+os.arch=amd64
 os.version=10.0
 derby.system.home=null
 Database Class Loader started - derby.database.classpath=''
